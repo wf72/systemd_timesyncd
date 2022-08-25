@@ -1,4 +1,4 @@
-# systemd-timesyncd
+# systemd_timesyncd
 
 Ansilbe role sets the timezone and configures and enables systemd-timesyncd.
 
@@ -32,7 +32,7 @@ None
 ```yml
 - hosts: all
   roles:
-  - systemd-timesyncd
+  - wf72.systemd_timesyncd
     timesync_timezone: Europe/Moscow
     timesync_ntp_hosts:
       - some.ntp.host
