@@ -20,7 +20,8 @@ galaxy_info:
   galaxy_tags:
     - systemd
     - ntp
-    - systemd-timesyncd
+    - systemd
+    - timesyncd
     - timesync
     - time
     - timedatectl
