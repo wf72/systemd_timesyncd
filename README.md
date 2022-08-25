@@ -1,3 +1,4 @@
+![.github/workflows/main.yml](https://github.com/wf72/systemd_timesyncd/actions/workflows/.github/workflows/main.yml/badge.svg)
 # systemd_timesyncd
 
 Ansilbe role sets the timezone and configures and enables systemd-timesyncd.
