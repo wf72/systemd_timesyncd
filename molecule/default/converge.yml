@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include wf72.systemd_timesyncd"
+      include_role:
+        name: "wf72.systemd_timesyncd"
