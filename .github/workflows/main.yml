@@ -4,10 +4,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: checkout
+        uses: actions/checkout@v3
         with:
           path: "${{ github.repository }}"
-      - uses: gofrolist/molecule-action@v2
+      - name: molecule
+        uses: robertdebock/molecule-action@4.0.9
   release:
     needs:
       - test
