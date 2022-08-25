@@ -2,6 +2,7 @@ galaxy_info:
   author: Andrey Dorofeev
   namespace: wf72
   description: Set timezone and configure systemd-timesyncd
+  company: OTR 2000
 
   license: CC BY-SA 4.0
 
