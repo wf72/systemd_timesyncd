@@ -1,4 +1,7 @@
-on: push
+on: 
+  push:
+    paths-ignore:
+      - '**.md'
 
 jobs:
   test:
@@ -11,6 +14,7 @@ jobs:
       - name: molecule
         uses: robertdebock/molecule-action@4.0.9
   release:
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     needs:
       - test
     runs-on: ubuntu-latest
