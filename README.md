@@ -7,8 +7,12 @@ Based on role [stuvusit.systemd-timesyncd](https://github.com/stuvusIT/systemd-t
 ## Requirements
 
 OS:
-- debian:11
-- ubuntu
+- debian:
+  - 10
+  - 11
+- ubuntu:
+  - 20.04
+  - 22.04
 
 ## Role Variables
 
