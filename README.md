@@ -34,10 +34,11 @@ None
 - hosts: all
   roles:
   - wf72.systemd_timesyncd
-    timesync_timezone: Europe/Moscow
-    timesync_ntp_hosts:
-      - some.ntp.host
-      - another.ntp.host
+    vars:
+      timesync_timezone: Europe/Moscow
+      timesync_ntp_hosts:
+        - some.ntp.host
+        - another.ntp.host
 ```
 
 ## License
