@@ -33,7 +33,7 @@ None
 ```yml
 - hosts: all
   roles:
-  - wf72.systemd_timesyncd
+  - role: wf72.systemd_timesyncd
     vars:
       timesync_timezone: Europe/Moscow
       timesync_ntp_hosts:
