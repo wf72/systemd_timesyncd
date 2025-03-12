@@ -4,3 +4,12 @@
 [Time]
 NTP={{ timesync_ntp_hosts | default("") | join(" ") }}
 FallbackNTP={{ timesync_fallback_ntp_hosts | join(" ") }}
+{% if timesync_rootdistancemaxsec is defined %}
+RootDistanceMaxSec={{ timesync_rootdistancemaxsec }}
+{% endif %}
+{% if timesync_pollintervalminsec is defined %}
+PollIntervalMinSec={{ timesync_pollintervalminsec }}
+{% endif %}
+{% if timesync_pollintervalmaxsec is defined %}
+PollIntervalMaxSec={{ timesync_pollintervalmaxsec }}
+{% endif %}
