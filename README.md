@@ -22,6 +22,7 @@ OS:
 | `timesync_timezone`                |       `Etc/UTC`       | Timezone to set (relative to `/usr/share/zoneinfo`)                               |
 | `timesync_ntp_hosts`               |                       | Array of NTP hosts                                                                |
 | `timesync_fallback_ntp_hosts`      | `{0..3}.pool.ntp.org` | Array of fallback NTP hosts                                                       |
+| `timesync_write_hwclock_on_change` |        `false`         | Whether to write the time to the hardware clock after changing the configuration. |
 | `timesync_rootdistancemaxsec` | | Maximum acceptable root distance, i.e. the maximum estimated time required for a packet to travel to the server we are connected to from the server with the reference clock. |
 | `timesync_pollintervalminsec`,`timesync_pollintervalmaxsec` | | The minimum and maximum poll intervals for NTP messages. Polling starts at the minimum poll interval, and is adjusted within the specified limits in response to received packets. |
 

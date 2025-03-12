@@ -5,3 +5,8 @@
     state: restarted
   listen: systemd-timesyncd configuration changed
   when: (ansible_facts.services is defined and ansible_facts.services['systemd-timesyncd.service'] is defined  and ansible_facts.services['systemd-timesyncd.service']['source'] == 'systemd') and ((ansible_distribution == 'Debian' and ansible_distribution_major_version|int >= 11) or (ansible_distribution == 'Ubuntu' and ansible_distribution_major_version|int >= 20))
+
+- name: Write adjtime
+  command: hwclock --systohc
+  when: (ansible_virtualization_role == "host" or ansible_virtualization_role == "NA") and timesync_write_hwclock_on_change
+  listen: systemd-timesyncd configuration changed
