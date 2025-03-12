@@ -12,7 +12,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: molecule
-        uses: robertdebock/molecule-action@4.0.9
+        uses: robertdebock/molecule-action@6.0.1
   release:
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     needs:
