@@ -4,21 +4,14 @@ dependency:
 driver:
   name: docker
 platforms:
-  - name: debian_9
-    image: debian:9
-  - name: debian_10
-    image: debian:10
   - name: debian_11
     image: debian:11
-  - name: ubuntu_18.04
-    image: ubuntu:18.04
-  - name: ubuntu_20.04
-    image: ubuntu:20.04
+  - name: debian_12
+    image: debian:12
   - name: ubuntu_22.04
     image: ubuntu:22.04
-  - name: centos_7
-    image: docker.io/pycontribs/centos:7
-    pre_build_image: true
+  - name: ubuntu_24.04
+    image: ubuntu:24.04
 provisioner:
   name: ansible
 verifier:
